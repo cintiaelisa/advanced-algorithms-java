@@ -1,7 +1,4 @@
-package org.example;
-
-import org.example.breadthFirstSearch.BreadthFirstSearch;
-import org.example.breadthFirstSearch.Vertex;
+package org.example.breadthFirstSearch;
 
 public class Main {
     public static void main(String[] args) {
