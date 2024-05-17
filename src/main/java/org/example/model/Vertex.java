@@ -22,7 +22,7 @@ public class Vertex {
         this.visited = visited;
     }
 
-    public List<Vertex> getAdjacencyList() {
+    public List<Vertex> getNeighbors() {
         return adjacencyList;
     }
 

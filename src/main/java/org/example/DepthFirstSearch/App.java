@@ -12,19 +12,39 @@ public class App {
         Vertex v3 = new Vertex("C");
         Vertex v4 = new Vertex("D");
         Vertex v5 = new Vertex("E");
+        Vertex v6 = new Vertex("F");
+        Vertex v7 = new Vertex("G");
+        Vertex v8 = new Vertex("H");
+
 
         List<Vertex> list = new ArrayList<>();
         v1.addNeighbor(v2);
-        v1.addNeighbor(v3);
-        v3.addNeighbor(v4);
+        v1.addNeighbor(v6);
+        v1.addNeighbor(v7);
+
+        v2.addNeighbor(v3);
+        v2.addNeighbor(v4);
+
         v4.addNeighbor(v5);
+
+        v7.addNeighbor(v8);
 
         list.add(v1);
         list.add(v2);
         list.add(v3);
         list.add(v4);
         list.add(v5);
+        list.add(v6);
+        list.add(v7);
+        list.add(v8);
 
+        System.out.println("With recursion");
+        DepthFirstSearchRecursion dfsr = new DepthFirstSearchRecursion();
+        dfsr.dfs(list);
+
+        list.forEach(v -> v.setVisited(false));
+
+        System.out.println("With Stack");
         DepthFirstSearch dfs = new DepthFirstSearch();
         dfs.dfs(list);
     }
