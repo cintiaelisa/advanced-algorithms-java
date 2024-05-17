@@ -1,4 +1,4 @@
-package org.example.breadthFirstSearch;
+package org.example.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +30,7 @@ public class Vertex {
         this.adjacencyList.add(vertex);
     }
 
+    @Override
     public String toString() {
         return this.name;
     }

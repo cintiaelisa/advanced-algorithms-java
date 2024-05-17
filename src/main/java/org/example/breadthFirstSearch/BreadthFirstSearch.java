@@ -1,5 +1,7 @@
 package org.example.breadthFirstSearch;
 
+import org.example.model.Vertex;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
