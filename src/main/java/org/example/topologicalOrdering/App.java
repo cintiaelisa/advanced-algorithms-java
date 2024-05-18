@@ -10,7 +10,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        TopologialOrdering ordering = new TopologialOrdering();
+        TopologicalOrdering ordering = new TopologicalOrdering();
 
         List<Vertex> grapqh = new ArrayList<>();
 
@@ -43,7 +43,5 @@ public class App {
         for (int i = 0; i < grapqh.size(); i++) {
             System.out.println(stack.pop());
         }
-
-
     }
 }

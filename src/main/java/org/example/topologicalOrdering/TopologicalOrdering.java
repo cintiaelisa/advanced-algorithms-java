@@ -4,11 +4,11 @@ import org.example.model.Vertex;
 
 import java.util.Stack;
 
-public class TopologialOrdering {
+public class TopologicalOrdering {
 
     private Stack<Vertex> stack;
 
-    public TopologialOrdering() {
+    public TopologicalOrdering() {
         this.stack = new Stack<>();
     }
 
